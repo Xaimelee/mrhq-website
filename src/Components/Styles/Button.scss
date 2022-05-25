@@ -1,0 +1,33 @@
+.button {
+    padding: 20px;
+    width: 250px;
+    height: 125px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.blueButton {
+    @extend .button;
+    background-color: style.$blue;
+    color: white;
+
+    &:active {
+        border: 6px solid style.$blue-dark;
+    }
+}
+
+.whiteButton {
+    @extend .button;
+    background-color: white;
+    color: style.$grey;
+
+    &:active {
+        border: 6px solid style.$grey-light;
+    }
+}

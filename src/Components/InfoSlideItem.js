@@ -2,7 +2,7 @@ import React from 'react'
 
 function InfoSlideItem({image, headerText, text}) {
   return (
-    <ul className = "InfoSlideItem">
+    <ul className = "InfoSlideItems">
         <li className = "InfoSlideImage">
             <img src={image} alt=""/>
         </li>
@@ -12,8 +12,8 @@ function InfoSlideItem({image, headerText, text}) {
         <li className = "InfoSlideText">
             {text}
         </li>
-        <li className = "InfoSlideButton">
-            <button>
+        <li>
+            <button className = "InfoSlideButton">
                 Learn More
             </button>
         </li>

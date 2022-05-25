@@ -70,36 +70,59 @@
     float: right;
 }
 
-.button {
-    padding: 20px;
-    width: 250px;
-    height: 125px;
-    font-size: 24px;
+.InfoSlide {
+    @extend .bar;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
+
+.InfoSlideItems {
+    @extend .bar;
+    list-style-position: inside;
+    padding-right: 0;
+    padding: 80px;
+    width: 340px;
+}
+
+.infoSlideItem {
+    width: 100%;
+    margin-top: 26px;
+}
+
+.InfoSlideImage {
+    @extend .infoSlideItem;
+}
+
+.InfoSlideHeaderText {
+    @extend .infoSlideItem;
     font-weight: bold;
-    border: none;
+    font-size: 22px;
+}
+
+.InfoSlideText {
+    @extend .infoSlideItem;
+}
+
+.InfoSlideButton {
+    @extend .infoSlideItem;
+    height: 60px;
+    background-color: white;
+    color: style.$blue;
+    font-weight: bold;
+    font-size: 20px;
+    border: 3px solid style.$blue;
     border-radius: 12px;
 
     &:hover {
         cursor: pointer;
     }
-}
-
-.blueButton {
-    @extend .button;
-    background-color: style.$blue;
-    color: white;
 
     &:active {
-        border: 6px solid style.$blue-dark;
-    }
-}
-
-.whiteButton {
-    @extend .button;
-    background-color: white;
-    color: style.$grey;
-
-    &:active {
-        border: 6px solid style.$grey-light;
+        border-color: style.$blue-dark;
+        background-color: style.$grey-light;
     }
 }
