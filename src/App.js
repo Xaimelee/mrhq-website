@@ -15,6 +15,7 @@ function App() {
         <p className = "BackgroundTextSecondary">As voted by Reader's Digest Most Trusted Brand Award</p>
       </div>
       <InfoSlide />
+      <div className = "Reviews"></div>
     </div>
   );
 }
