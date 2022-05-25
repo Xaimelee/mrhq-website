@@ -4,6 +4,7 @@ import SunAndTreeImage from './Images/sun_and_tree.png';
 import Header from './Components/Header';
 import ButtonList from './Components/ButtonList';
 import InfoSlide from './Components/InfoSlide';
+import ShowReviews from './Components/Reviews';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <div className = "Reviews">
         <img className = "SunAndTreeImage" src={SunAndTreeImage} alt=""/>
         <p className = "ReviewsHeaderText">What our customers are saying</p>
+        <ShowReviews />
       </div>
     </div>
   );
