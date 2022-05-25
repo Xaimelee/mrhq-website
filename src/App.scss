@@ -55,25 +55,14 @@
 .Reviews {
     background-color: style.$blue-light;
     position: relative;
-    height: 800px;
+    height: 600px;
     width: 100%;
 }
 
 .ReviewsHeaderText {
     position: relative;
+    top: 50px;
     text-align: center;
     font-size: 56px;
     font-weight: bold;
-}
-
-.SunAndTreeImage {
-    position: absolute;
-    width: 350px;
-    left: 5%;
-    bottom: 30%;
-}
-
-.QuoteImage {
-    position: relative;
-    left: 30%;  
 }
