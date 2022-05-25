@@ -6,9 +6,9 @@ import { useState } from 'react';
 
 function ShowReviews() {
     const reviews = [
-        {review: "test", author: "1"},
-        {review: "test", author: "2"},
-        {review: "test", author: "3"}
+        {review: "I was confused about which insurance to buy but the staff at Turners helped me in finding the right policy.", author: "- Sam, Auckland"},
+        {review: "Staff were great and helped me answer my questions. Simple and easy!", author: "- Shawn, Wellington"},
+        {review: "Just one word, Fantastic. They know how to deal with the customers. Highly recommended.", author: "- Kamal, Napier"}
     ]
     const [index, setIndex] = useState(0);
 
@@ -24,9 +24,9 @@ function ShowReviews() {
 
     return (
         <ul className = "ShowReviews">
-            <li><button className = "ReviewButton" onClick ={() => {changeReview(index - 1)}}><img src={NextLeftIcon} alt="" /></button></li>
+            <li><button className = "ReviewButton" onClick ={() => {changeReview(index - 1)}}><img className="ReviewButtonImage" src={NextLeftIcon} alt="" /></button></li>
             <Review review={reviews[index].review} author={reviews[index].author}/>
-            <li><button className = "ReviewButton" onClick ={() => {changeReview(index + 1)}}><img src={NextRightIcon} alt="" /></button></li>
+            <li><button className = "ReviewButton" onClick ={() => {changeReview(index + 1)}}><img className="ReviewButtonImage" src={NextRightIcon} alt="" /></button></li>
         </ul>
     )
 }

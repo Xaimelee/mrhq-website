@@ -1,6 +1,7 @@
 import './App.scss';
 import TurnersLogo from './Images/turners_car_logo.png';
-import SunAndTreeImage from './Images/sun_and_tree.png';
+//import SunAndTreeImage from './Images/sun_and_tree.png';
+import QuoteImage from './Images/quote.png';
 import Header from './Components/Header';
 import ButtonList from './Components/ButtonList';
 import InfoSlide from './Components/InfoSlide';
@@ -18,8 +19,8 @@ function App() {
       </div>
       <InfoSlide />
       <div className = "Reviews">
-        <img className = "SunAndTreeImage" src={SunAndTreeImage} alt=""/>
         <p className = "ReviewsHeaderText">What our customers are saying</p>
+        <img className = "QuoteImage" src={QuoteImage} alt=""/>
         <ShowReviews />
       </div>
     </div>

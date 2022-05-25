@@ -62,14 +62,18 @@
 .ReviewsHeaderText {
     position: relative;
     text-align: center;
-    bottom: 360px;
     font-size: 56px;
     font-weight: bold;
 }
 
 .SunAndTreeImage {
-    position: relative;
+    position: absolute;
     width: 350px;
     left: 5%;
-    top: 50%;
+    bottom: 30%;
+}
+
+.QuoteImage {
+    position: relative;
+    left: 30%;  
 }
