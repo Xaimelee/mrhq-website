@@ -1,6 +1,8 @@
 import React from 'react';
 import Review from './Review';
-import { useState } from "react";
+import NextRightIcon from '../Images/next_right.png';
+import NextLeftIcon from '../Images/next_left.png';
+import { useState } from 'react';
 
 function ShowReviews() {
     const reviews = [
@@ -22,9 +24,9 @@ function ShowReviews() {
 
     return (
         <ul className = "ShowReviews">
-            <button className = "ReviewButton" onClick ={() => {changeReview(index - 1)}}></button>
+            <li><button className = "ReviewButton" onClick ={() => {changeReview(index - 1)}}><img src={NextLeftIcon} alt="" /></button></li>
             <Review review={reviews[index].review} author={reviews[index].author}/>
-            <button className = "ReviewButton" onClick ={() => {changeReview(index + 1)}}></button>
+            <li><button className = "ReviewButton" onClick ={() => {changeReview(index + 1)}}><img src={NextRightIcon} alt="" /></button></li>
         </ul>
     )
 }
