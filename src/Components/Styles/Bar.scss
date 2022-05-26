@@ -85,7 +85,7 @@
     @extend .bar;
     padding-right: 0;
     padding: 80px;
-    width: 340px;
+    width: 440px;
 }
 
 .infoSlideItem {
@@ -100,11 +100,13 @@
 .InfoSlideHeaderText {
     @extend .infoSlideItem;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .InfoSlideText {
     @extend .infoSlideItem;
+    font-weight: 500;
+    font-size: 22px;
 }
 
 .InfoSlideButton {
