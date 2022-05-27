@@ -1,0 +1,38 @@
+.CoversTable {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 3px 3px 3px style.$grey;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.CoversHeaders {
+    outline: 3px solid style.$grey;
+}
+
+.CoverHeaderText {
+    font-size: 28px;
+    outline: 2px solid style.$grey-light;
+}
+
+.CoversEntries {
+
+}
+
+.CoversTextEntry {
+    text-align: left;
+    font-size: 22px;
+    width: 800px;
+}
+
+.CoversImageEntry {
+    width: 200px;
+    background-color: style.$grey-light;
+}
+
+.CoversIcon {
+
+}

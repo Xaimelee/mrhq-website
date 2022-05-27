@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import ButtonList from './Components/ButtonList';
 import InfoSlide from './Components/InfoSlide';
 import ShowReviews from './Components/Reviews';
+import CoversList from './Components/CoversList';
 
 function App() {
   return (
@@ -21,6 +22,13 @@ function App() {
       <div className = "Reviews">
         <p className = "ReviewsHeaderText">What our customers are saying</p>
         <ShowReviews />
+      </div>
+      <div className = "CoversHeader">
+        <p className = "CoversHeaderText">Not sure what cover you're after?</p>
+        <p className = "CoversHeaderCompareText">Compare our different covers below!</p>
+      </div>
+      <div className = "CoversBackground">
+        <CoversList />
       </div>
     </div>
   );

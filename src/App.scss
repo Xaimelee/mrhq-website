@@ -2,6 +2,7 @@
 @import "./Components/Styles/Bar.scss";
 @import "./Components/Styles/Button.scss";
 @import "./Components/Styles/Reviews.scss";
+@import "./Components/Styles/Covers.scss";
 
 .expandWidth {
     margin: 0;
@@ -65,4 +66,31 @@
     text-align: center;
     font-size: 56px;
     font-weight: bold;
+}
+
+.CoversHeader {
+    width: 100%;
+    text-align: center;
+}
+
+.CoversHeaderText {
+    font-weight: bold;
+    font-size: 52px;
+    color: style.$blue;
+    margin-bottom: 0;
+}
+
+.CoversHeaderCompareText {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.Covers {
+    position: relative;
+}
+
+.CoversBackground {
+    background-color: style.$grey-light;
+    padding: 5%;
 }
