@@ -1,5 +1,9 @@
 import './App.scss';
 import TurnersLogo from './Images/turners_car_logo.png';
+import EmailIcon from './Images/email_icon.png';
+import FacebookIcon from './Images/fb_icon.png';
+import TwitterIcon from './Images/twitter_icon.png';
+import InstagramIcon from './Images/instagram_icon.png';
 //import SunAndTreeImage from './Images/sun_and_tree.png';
 //import QuoteImage from './Images/quote.png';
 import Header from './Components/Header';
@@ -12,7 +16,7 @@ import InformationList from './Components/InformationList';
 function App() {
   return (
     <div className="App">
-      <img className = "TurnersLogo" src={TurnersLogo} alt=""/>
+      <a href = "/"><img className = "TurnersLogo" src={TurnersLogo} alt=""/></a>
       <Header />
       <div className = "Background">  
         <ButtonList />
@@ -35,6 +39,12 @@ function App() {
       <div className = "CoversHeader"></div>
       <div className = "Information">
         <InformationList />
+        <ul className = "ContactApps">
+          <li><a href = "/"><img className = "ContactApp" src ={EmailIcon} alt=""/></a></li>
+          <li><a href = "/"><img className = "ContactApp" src ={FacebookIcon} alt=""/></a></li>
+          <li><a href = "/"><img className = "ContactApp" src ={TwitterIcon} alt=""/></a></li>
+          <li><a href = "/"><img className = "ContactApp" src ={InstagramIcon} alt=""/></a></li>
+        </ul>
       </div>
     </div>
   );

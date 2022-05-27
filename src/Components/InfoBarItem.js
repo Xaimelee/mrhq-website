@@ -3,7 +3,7 @@ import React from 'react'
 function InfoBarItem({text}) {
   return (
     <li className = "InfoBarItem">
-      {text}
+      <a className = "InfoBarItem" href = "/">{text}</a>
     </li>
   )
 }
