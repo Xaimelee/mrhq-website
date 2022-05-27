@@ -3,6 +3,7 @@
 @import "./Components/Styles/Button.scss";
 @import "./Components/Styles/Reviews.scss";
 @import "./Components/Styles/Covers.scss";
+@import "./Components/Styles/Information.scss";
 
 .expandWidth {
     margin: 0;
@@ -44,6 +45,7 @@
 
 .CoversHeader {
     width: 100%;
+    min-height: 200px;
     text-align: center;
 }
 
@@ -71,7 +73,13 @@
 }
 
 .PolicyText {
-    float: right;
-    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    text-align: center;
     color: style.$grey
+}
+
+.Information {
+    background-color: style.$blue;
 }

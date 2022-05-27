@@ -1,0 +1,39 @@
+.InformationList {
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    width: 100%;
+}
+
+.InformationContents {
+    list-style-type: none;
+    padding: 50px;
+}
+
+.InformationHeader {
+    @extend .text;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.InformationContent {
+    @extend .text;
+    font-weight: 300;
+    font-size: 24px;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.text {
+    color: white;
+}

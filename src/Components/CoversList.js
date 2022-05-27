@@ -22,11 +22,11 @@ function CoversList() {
     let result = [];
     for (let i = 0; i < array.length; i++) {
       result.push (
-        <tr className = "CoversEntries">
+        <tr>
           <td className = "CoversTextEntry">{array[i].cover}</td>
-          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {array[i].fc} alt = ""/></td>
-          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {array[i].tpft} alt = ""/></td>
-          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {array[i].tp} alt = ""/></td>
+          <td className = "CoversImageEntry"><img src = {array[i].fc} alt = ""/></td>
+          <td className = "CoversImageEntry"><img src = {array[i].tpft} alt = ""/></td>
+          <td className = "CoversImageEntry"><img src = {array[i].tp} alt = ""/></td>
         </tr>
       )
     }
@@ -35,20 +35,20 @@ function CoversList() {
 
   return (
     <table className = "CoversTable">
-        <tr className = "CoversHeaders">
+        <tr>
           <th className = "CoverHeaderText">Services</th>
           <th className = "CoverHeaderText">Full Cover</th>
           <th className = "CoverHeaderText">Third Party Fire & Theft</th>
           <th className = "CoverHeaderText">Third Party Only</th>
         </tr>
         {addAllEntries(covers)}
-        <tr className = "CoversEntries">
+        <tr>
           <td className = "CoversTextEntry"></td>
           <td className = "CoversImageEntry"><QuoteButton /></td>
           <td className = "CoversImageEntry"><QuoteButton /></td>
           <td className = "CoversImageEntry"><QuoteButton /></td>
         </tr>
-        <tr className = "CoversHeaders">
+        <tr>
           <th className = "CoverHeaderText">Optional</th>
         </tr>
         {addAllEntries(optionalCovers)}

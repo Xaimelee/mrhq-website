@@ -9,17 +9,8 @@
     vertical-align: middle;
 }
 
-.CoversHeaders {
-    outline: 3px solid style.$grey;
-}
-
 .CoverHeaderText {
     font-size: 28px;
-    outline: 2px solid style.$grey-light;
-}
-
-.CoversEntries {
-
 }
 
 .CoversTextEntry {
@@ -31,8 +22,4 @@
 .CoversImageEntry {
     width: 200px;
     background-color: style.$grey-light;
-}
-
-.CoversIcon {
-
 }

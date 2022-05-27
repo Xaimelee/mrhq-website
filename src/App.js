@@ -7,6 +7,7 @@ import ButtonList from './Components/ButtonList';
 import InfoSlide from './Components/InfoSlide';
 import ShowReviews from './Components/Reviews';
 import CoversList from './Components/CoversList';
+import InformationList from './Components/InformationList';
 
 function App() {
   return (
@@ -27,7 +28,13 @@ function App() {
       </div>
       <div className = "CoversBackground">
         <CoversList />
-        <a className = "PolicyText" href="https://content.tgstatic.co.nz/webassets/globalassets/terms-and-conditions/turners-car-everyday-plus-vcpcep-policy-book-062018-used26032021-current.pdf">*View our policy document</a>
+        <div className = "PolicyText">
+         <a className = "PolicyText" href="https://content.tgstatic.co.nz/webassets/globalassets/terms-and-conditions/turners-car-everyday-plus-vcpcep-policy-book-062018-used26032021-current.pdf">*View our policy document</a>
+        </div>
+      </div>
+      <div className = "CoversHeader"></div>
+      <div className = "Information">
+        <InformationList />
       </div>
     </div>
   );
