@@ -31,3 +31,10 @@
         border: 6px solid style.$grey-light;
     }
 }
+
+.QuoteButton {
+    @extend .blueButton;
+    font-size: 22px;
+    height: 65px;
+    width: 175px;
+}

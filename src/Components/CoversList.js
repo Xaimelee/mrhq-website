@@ -1,4 +1,5 @@
 import React from 'react';
+import QuoteButton from './QuoteButton';
 import CheckIcon from '../Images/check_icon.png';
 import LineIcon from '../Images/line_icon.png';
 
@@ -12,16 +13,20 @@ function CoversList() {
     {cover: "Protection against uninsured drivers", fc: CheckIcon, tpft: CheckIcon, tp: CheckIcon},
     {cover: "Emergency travel and accomodation cover up to $500", fc: CheckIcon, tpft: LineIcon, tp: LineIcon}
   ]
+  const optionalCovers = [
+    {cover: "Mechanical Warranty Cover", fc: CheckIcon, tpft: CheckIcon, tp: CheckIcon},
+    {cover: "AA Roadside Rescure", fc: CheckIcon, tpft: CheckIcon, tp: CheckIcon}
+  ]
 
-  function addAllEntries() {
+  function addAllEntries(array) {
     let result = [];
-    for (let i = 0; i < covers.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       result.push (
         <tr className = "CoversEntries">
-          <td className = "CoversTextEntry">{covers[i].cover}</td>
-          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {covers[i].fc} alt = ""/></td>
-          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {covers[i].tpft} alt = ""/></td>
-          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {covers[i].tp} alt = ""/></td>
+          <td className = "CoversTextEntry">{array[i].cover}</td>
+          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {array[i].fc} alt = ""/></td>
+          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {array[i].tpft} alt = ""/></td>
+          <td className = "CoversImageEntry"><img className = "CoversIcon" src = {array[i].tp} alt = ""/></td>
         </tr>
       )
     }
@@ -29,15 +34,25 @@ function CoversList() {
   }
 
   return (
-      <table className = "CoversTable">
-          <tr className = "CoversHeaders">
-            <th className = "CoverHeaderText">Services</th>
-            <th className = "CoverHeaderText">Full Cover</th>
-            <th className = "CoverHeaderText">Third Party Fire & Theft</th>
-            <th className = "CoverHeaderText">Third Party Only</th>
-          </tr>
-          {addAllEntries()}
-      </table> 
+    <table className = "CoversTable">
+        <tr className = "CoversHeaders">
+          <th className = "CoverHeaderText">Services</th>
+          <th className = "CoverHeaderText">Full Cover</th>
+          <th className = "CoverHeaderText">Third Party Fire & Theft</th>
+          <th className = "CoverHeaderText">Third Party Only</th>
+        </tr>
+        {addAllEntries(covers)}
+        <tr className = "CoversEntries">
+          <td className = "CoversTextEntry"></td>
+          <td className = "CoversImageEntry"><QuoteButton /></td>
+          <td className = "CoversImageEntry"><QuoteButton /></td>
+          <td className = "CoversImageEntry"><QuoteButton /></td>
+        </tr>
+        <tr className = "CoversHeaders">
+          <th className = "CoverHeaderText">Optional</th>
+        </tr>
+        {addAllEntries(optionalCovers)}
+    </table> 
   )
 }
 

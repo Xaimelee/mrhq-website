@@ -59,9 +59,9 @@
 }
 
 .ButtonList { 
-    @extend .bar;
-    position: relative;
-    top: 80%;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
 }
 
 .ButtonListItem {

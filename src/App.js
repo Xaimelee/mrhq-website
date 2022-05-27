@@ -13,10 +13,8 @@ function App() {
     <div className="App">
       <img className = "TurnersLogo" src={TurnersLogo} alt=""/>
       <Header />
-      <div className = "Background">
+      <div className = "Background">  
         <ButtonList />
-        <p className = "BackgroundTextMain">NZ's most trusted used vehicle dealership</p>
-        <p className = "BackgroundTextSecondary">As voted by Reader's Digest Most Trusted Brand Award</p>
       </div>
       <InfoSlide />
       <div className = "Reviews">
@@ -29,6 +27,7 @@ function App() {
       </div>
       <div className = "CoversBackground">
         <CoversList />
+        <a className = "PolicyText" href="https://content.tgstatic.co.nz/webassets/globalassets/terms-and-conditions/turners-car-everyday-plus-vcpcep-policy-book-062018-used26032021-current.pdf">*View our policy document</a>
       </div>
     </div>
   );
