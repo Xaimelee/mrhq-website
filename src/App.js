@@ -41,9 +41,9 @@ function App() {
         <InformationList />
         <ul className = "ContactApps">
           <li><a href = "/"><img className = "ContactApp" src ={EmailIcon} alt=""/></a></li>
-          <li><a href = "/"><img className = "ContactApp" src ={FacebookIcon} alt=""/></a></li>
-          <li><a href = "/"><img className = "ContactApp" src ={TwitterIcon} alt=""/></a></li>
-          <li><a href = "/"><img className = "ContactApp" src ={InstagramIcon} alt=""/></a></li>
+          <li><a href = "/"><img className = "ContactApp" src ={FacebookIcon} alt="https://www.facebook.com/turnersNZ/"/></a></li>
+          <li><a href = "/"><img className = "ContactApp" src ={TwitterIcon} alt="https://twitter.com/turnersgroupnz?lang=en"/></a></li>
+          <li><a href = "/"><img className = "ContactApp" src ={InstagramIcon} alt="https://www.instagram.com/turners_cars/?hl=en"/></a></li>
         </ul>
       </div>
     </div>
